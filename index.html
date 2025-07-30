@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <!-- Base styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Theme styles - default to modern -->
+    <link rel="stylesheet" href="theme-modern.css" id="theme-stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column - Controls Panel -->
+        <div class="controls-panel">
+            <h2>Resume Builder</h2>
+            
+            <!-- Personal Information Section -->
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="input-name">Full Name</label>
+                    <input type="text" id="input-name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="input-title">Professional Title</label>
+                    <input type="text" id="input-title" placeholder="e.g., Software Developer">
+                </div>
+                <div class="form-group">
+                    <label for="input-phone">Phone</label>
+                    <input type="tel" id="input-phone" placeholder="+1 (555) 123-4567">
+                </div>
+                <div class="form-group">
+                    <label for="input-email">Email</label>
+                    <input type="email" id="input-email" placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="input-location">Location</label>
+                    <input type="text" id="input-location" placeholder="City, State">
+                </div>
+                <div class="form-group">
+                    <label for="input-linkedin">LinkedIn</label>
+                    <input type="url" id="input-linkedin" placeholder="linkedin.com/in/yourprofile">
+                </div>
+            </div>
+
+            <!-- Professional Summary Section -->
+            <div class="form-section">
+                <h3>Professional Summary</h3>
+                <div class="form-group">
+                    <label for="input-summary">Summary</label>
+                    <textarea id="input-summary" rows="4" placeholder="Brief professional summary..."></textarea>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="form-section">
+                <h3>Experience</h3>
+                <div class="form-group">
+                    <label for="input-experience">Work Experience</label>
+                    <textarea id="input-experience" rows="6" placeholder="Job Title - Company Name (Year - Year)&#10;• Achievement or responsibility&#10;• Another achievement&#10;&#10;Previous Job Title - Previous Company (Year - Year)&#10;• Achievement or responsibility"></textarea>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="form-section">
+                <h3>Education</h3>
+                <div class="form-group">
+                    <label for="input-education">Education</label>
+                    <textarea id="input-education" rows="3" placeholder="Degree - University Name (Year)&#10;Relevant coursework, honors, etc."></textarea>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="form-section">
+                <h3>Skills</h3>
+                <div class="form-group">
+                    <label for="input-skills">Skills</label>
+                    <textarea id="input-skills" rows="3" placeholder="• Programming Languages: JavaScript, Python, Java&#10;• Frameworks: React, Node.js, Express&#10;• Tools: Git, Docker, AWS"></textarea>
+                </div>
+            </div>
+
+            <!-- Theme Controls -->
+            <div class="form-section">
+                <h3>Theme Options</h3>
+                <div class="theme-buttons">
+                    <button type="button" id="theme-modern" class="theme-btn active">Modern</button>
+                    <button type="button" id="theme-classic" class="theme-btn">Classic</button>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="form-section">
+                <button type="button" id="print-btn" class="print-btn">Print/Download PDF</button>
+                <button type="button" id="clear-btn" class="clear-btn">Clear All</button>
+            </div>
+        </div>
+
+        <!-- Right Column - Preview Pane -->
+        <div class="preview-pane">
+            <div class="resume-preview" id="resume-preview">
+                <!-- Header Section -->
+                <div class="resume-header">
+                    <h1 id="preview-name">Your Name</h1>
+                    <h2 id="preview-title">Professional Title</h2>
+                    <div class="contact-info">
+                        <span id="preview-phone">Phone</span>
+                        <span class="separator">•</span>
+                        <span id="preview-email">Email</span>
+                        <span class="separator">•</span>
+                        <span id="preview-location">Location</span>
+                        <span class="separator">•</span>
+                        <span id="preview-linkedin">LinkedIn</span>
+                    </div>
+                </div>
+
+                <!-- Summary Section -->
+                <div class="resume-section" id="summary-section">
+                    <h3 class="section-title">Professional Summary</h3>
+                    <div class="section-content">
+                        <p id="preview-summary">Your professional summary will appear here...</p>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="resume-section" id="experience-section">
+                    <h3 class="section-title">Experience</h3>
+                    <div class="section-content">
+                        <div id="preview-experience">Your work experience will appear here...</div>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="resume-section" id="education-section">
+                    <h3 class="section-title">Education</h3>
+                    <div class="section-content">
+                        <div id="preview-education">Your education details will appear here...</div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="resume-section" id="skills-section">
+                    <h3 class="section-title">Skills</h3>
+                    <div class="section-content">
+                        <div id="preview-skills">Your skills will appear here...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

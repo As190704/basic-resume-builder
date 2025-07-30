@@ -1,0 +1,117 @@
+/* Modern Theme Styles */
+.resume-preview {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin: -40px -40px 30px -40px;
+    padding: 40px;
+    text-align: left;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.resume-header h1 {
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.resume-header h2 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-info .separator {
+    display: none;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #667eea;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: normal;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #764ba2;
+}
+
+.section-content {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #f0f0f0;
+    position: relative;
+}
+
+.resume-section::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 9px;
+    height: 9px;
+    background-color: #667eea;
+    border-radius: 50%;
+}
+
+/* Modern styling for content */
+#preview-experience,
+#preview-education,
+#preview-skills {
+    white-space: pre-line;
+}
+
+/* Enhanced typography */
+.section-content p {
+    text-align: justify;
+}
+
+/* Modern list styling */
+.section-content div {
+    position: relative;
+    padding-left: 0;
+}
+
+/* Hover effects for interactivity */
+.resume-section:hover {
+    border-left-color: #667eea;
+    transition: border-left-color 0.3s ease;
+}
+
+.resume-section:hover::before {
+    background-color: #764ba2;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}

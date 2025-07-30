@@ -1,0 +1,140 @@
+/* Classic Theme Styles */
+.resume-preview {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+.resume-header {
+    text-align: center;
+    background: none;
+    color: #333;
+    margin: 0 0 25px 0;
+    padding: 0 0 15px 0;
+    border-bottom: 3px double #333;
+}
+
+.resume-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.resume-header h2 {
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    font-size: 13px;
+    color: #444;
+    font-weight: normal;
+}
+
+.contact-info .separator {
+    margin: 0 10px;
+    color: #666;
+}
+
+.section-title {
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #2c3e50;
+    padding-bottom: 3px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+
+.section-content {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+}
+
+/* Classic typography */
+.section-content p {
+    margin-bottom: 8px;
+    text-indent: 0;
+}
+
+.section-content div {
+    margin-bottom: 8px;
+}
+
+/* Professional spacing */
+#preview-summary {
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+#preview-experience,
+#preview-education,
+#preview-skills {
+    white-space: pre-line;
+    font-family: inherit;
+}
+
+/* Classic bullet points simulation */
+#preview-skills {
+    padding-left: 0;
+}
+
+/* Formal document styling */
+.resume-preview {
+    padding: 50px 60px;
+}
+
+/* Enhanced readability */
+.section-content {
+    margin-bottom: 5px;
+}
+
+/* Traditional academic styling */
+#preview-education {
+    font-weight: normal;
+}
+
+/* Professional experience formatting */
+#preview-experience {
+    font-weight: normal;
+}
+
+/* Contact information styling */
+.contact-info span {
+    display: inline;
+}
+
+/* Print optimization for classic theme */
+@media print {
+    .resume-preview {
+        padding: 40px 50px;
+    }
+    
+    .resume-header h1 {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 12px;
+    }
+    
+    .section-content {
+        font-size: 11px;
+    }
+}
